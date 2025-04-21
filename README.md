@@ -7,10 +7,10 @@ Autor: Iván Panduro
 ## Capturas de Pantalla
 
   #Login
-  ![Login](src/assets/screenshots/Login.png)
+  ![Login](src/assets/screenshots/Login.jpg)
 
   #Pantalla Principal 
-  ![Home](src/assets/screenshots/Home.png)
+ ![Home](src/assets/screenshots/Home.jpg)
   
 
 
