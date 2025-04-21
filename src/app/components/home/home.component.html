@@ -1,0 +1,11 @@
+<h1>Bienvenido a ChileStream</h1>
+<h2 id="slogan" >Sin suscripciones, sin Comerciales .</h2>
+
+<div class="card-container">
+  <div class="card" *ngFor="let movie of peliculas">
+    <img [src]="movie.imagen" [alt]="movie.titulo">
+    <h2>{{ movie.titulo }}</h2>
+    <p>{{ movie.descripcion }}</p>
+    <button>Ver</button>
+  </div>
+</div>
