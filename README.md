@@ -1,30 +1,57 @@
 # ChileStream – Centro de Entretenimiento
-## 🎯 Objetivo
 
-Migrar e implementar el proyecto a **Angular versión 18** usando **TypeScript**, mejorando la seguridad del login, la performance, y finalizando las funcionalidades principales del menú.
+## Objetivo
 
-Autor: Iván Panduro
+Migrar e implementar el proyecto a Angular versión 18 usando TypeScript, mejorando la seguridad del login, la performance y finalizando las funcionalidades principales del menú.
+
+**Autor:** Iván Panduro
+
+---
+
 ## Capturas de Pantalla
 
-  #Login
-  ![Login](src/assets/screenshots/Login.jpg)
+### Login
 
-  #Pantalla Principal 
- ![Home](src/assets/screenshots/Home.jpg)
-  
+![Login](src/assets/screenshots/Login.jpg)
 
+### Pantalla Principal
 
-#Descripción del desarrollo
-  -Se migró el proyecto a Angular 18.
-  -Se implementó login con validación de formularios reactivos.
-  -Se creó una vista principal (Home) con tarjetas dinámicas de películas.
-  -Las imágenes se organizan en la carpeta /assets/peliculas.
+![Home](src/assets/screenshots/Home.jpg)
 
-#Problemas conocidos 
-  --Algunas validaciones no muestran mensajes dinámicos.
-  --Aún no se incluye funcionalidad de búsqueda ni filtros por estado de ánimo.
+---
 
-#Retrospectiva
-  -¿Qué hice bien?: Migración exitosa, estructura clara y organización de componentes.
-  -¿Qué no salió bien?: Conflictos al subir a GitHub y detalles con imágenes locales.
-  -¿Qué puedo hacer diferente?: Automatizar pruebas, usar servicios con API para las películas.
+## Descripción del Desarrollo
+
+- Se migró el proyecto a Angular 18.
+- Se implementó login con validación de formularios reactivos.
+- Se creó una vista principal (Home) con tarjetas dinámicas de películas.
+- Las imágenes se organizan en la carpeta `src/assets/peliculas`.
+
+---
+
+## Problemas Conocidos
+
+- Algunas validaciones no muestran mensajes dinámicos correctamente.
+- Aún no se incluye funcionalidad de búsqueda ni filtros por estado de ánimo.
+
+---
+
+## Retrospectiva
+
+### ¿Qué salió bien?
+
+- Migración exitosa a Angular 18.
+- Estructura y organización de componentes clara.
+
+### ¿Qué no salió tan bien?
+
+- Conflictos al subir a GitHub con imágenes locales (`.jpg`).
+- Validaciones no tan dinámicas como se esperaba.
+
+### ¿Qué puedo hacer diferente?
+
+- Automatizar pruebas.
+- Usar servicios con API pública para las películas.
+- Implementar búsqueda, paginación y filtrado por estado de ánimo.
+
+---
