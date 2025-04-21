@@ -4,6 +4,15 @@
 Migrar e implementar el proyecto a **Angular versión 18** usando **TypeScript**, mejorando la seguridad del login, la performance, y finalizando las funcionalidades principales del menú.
 
 Autor: Iván Panduro
+## Capturas de Pantalla
+
+  #Login
+  ![Login](src/assets/screenshots/Login.png)
+
+  #Pantalla Principal 
+  ![Home](src/assets/screenshots/Home.png)
+  
+
 
 #Descripción del desarrollo
   -Se migró el proyecto a Angular 18.
