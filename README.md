@@ -1,57 +1,83 @@
-# ChileStream – Centro de Entretenimiento
+# Chile Stream 
 
-## Objetivo
+##  Descripción y Objetivo
 
-Migrar e implementar el proyecto a Angular versión 18 usando TypeScript, mejorando la seguridad del login, la performance y finalizando las funcionalidades principales del menú.
+Chile Stream es una plataforma de streaming 
+##  Autor
 
-**Autor:** Iván Panduro
+Iván Careaga Panduro
 
----
+## Captura del Proyecto en Ejecución
 
-## Capturas de Pantalla
+![Vista principal](./src/assets/captura-ejecucion.png)
 
-### Login
 
-![Login](src/assets/screenshots/Login.jpg)
 
-### Pantalla Principal
+##  Instrucciones de Instalación y Uso
 
-![Home](src/assets/screenshots/Home.jpg)
+```bash
+# Clona el repositorio
+git clone https://github.com/ivanpanduro/chile-stream-angular.git
+cd chile-stream-angular
 
----
+# Instala dependencias
+npm install
 
-## Descripción del Desarrollo
+# Ejecuta el servidor
+ng serve
 
-- Se migró el proyecto a Angular 18.
-- Se implementó login con validación de formularios reactivos.
-- Se creó una vista principal (Home) con tarjetas dinámicas de películas.
-- Las imágenes se organizan en la carpeta `src/assets/peliculas`.
+# Corre las pruebas unitarias
+ng test --code-coverage
 
----
+# Visualiza el reporte de cobertura
+# Abre el archivo: coverage/index.html
+```
 
-## Problemas Conocidos
+##  Dependencias
 
-- Algunas validaciones no muestran mensajes dinámicos correctamente.
-- Aún no se incluye funcionalidad de búsqueda ni filtros por estado de ánimo.
+- Angular CLI: 19.2.8
+- Angular: 19.2.7
+- Node.js: 22.14.0
+- TypeScript: 5.3.3
+- Zone.js: 0.15.0
+- Karma: 6.4.4
 
----
+## ¿Cómo se hizo?
 
-## Retrospectiva
+Se inició el proyecto usando Angular CLI. Se diseñaron componentes personalizados, se implementó autenticación simulada y luego se integró el sistema de pruebas con Karma y Jasmine. También se configuró el archivo `karma.conf.js` y `test.ts` para el reporte de cobertura. Finalmente, se documentó todo el proceso y se subió a GitHub.
 
-### ¿Qué salió bien?
+##  Reporte de Testing y Code Coverage
 
-- Migración exitosa a Angular 18.
-- Estructura y organización de componentes clara.
+```plaintext
+Statements   : 88.23% (15/17)
+Branches     :  0%    (0/2)
+Functions    : 60%    (3/5)
+Lines        : 85.71% (12/14)
+```
 
-### ¿Qué no salió tan bien?
+> Para ver el reporte visual, abre `coverage/index.html`.
 
-- Conflictos al subir a GitHub con imágenes locales (`.jpg`).
-- Validaciones no tan dinámicas como se esperaba.
+##  Problemas Conocidos
+
+- Las imágenes de películas arrojan error 404 si no están en la carpeta `assets/peliculas`.
+- El atributo `.title` en `AppComponent` puede generar conflictos si no está declarado explícitamente.
+- Algunas dependencias de pruebas pueden entrar en conflicto si no coinciden con la versión exacta de Angular.
+
+##  Retrospectiva
+
+###  ¿Qué hice bien?
+- Se logró configurar Angular 19 con pruebas y code coverage exitosamente.
+- Se mantuvo orden en el código y carpetas.
+- Se usó Git de forma correcta para mantener control de cambios.
+
+###  ¿Qué no salió bien?
+- Hubo varios errores de compatibilidad entre versiones.
+- Falló inicialmente la detección de archivos `.spec.ts`.
+- Se intentaron soluciones incorrectas como usar `require.context`.
 
 ### ¿Qué puedo hacer diferente?
+- Planificar mejor la compatibilidad entre paquetes antes de instalar.
+- Seguir la documentación oficial más rigurosamente.
 
-- Automatizar pruebas.
-- Usar servicios con API pública para las películas.
-- Implementar búsqueda, paginación y filtrado por estado de ánimo.
 
 ---
