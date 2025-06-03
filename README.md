@@ -11,6 +11,11 @@ Iván Careaga Panduro
 
 ![Vista principal](./src/assets/captura-ejecucion.png)
 
+![ng serve](https://github.com/user-attachments/assets/dbdf9b39-1ad3-43ff-97a6-6f36cb0230a8)
+![home](https://github.com/user-attachments/assets/f4bf5213-d25c-4847-812f-522b11a44704)
+![login](https://github.com/user-attachments/assets/86fcedde-3980-45ec-b10b-cff5d9125232)
+![Backend](https://github.com/user-attachments/assets/41930cd3-da1b-432e-8c06-3d76b94255d0)
+
 
 
 ##  Instrucciones de Instalación y Uso
@@ -19,32 +24,60 @@ Iván Careaga Panduro
 # Clona el repositorio
 git clone https://github.com/ivanpanduro/chile-stream-angular.git
 cd chile-stream-angular
-
-# Instala dependencias
+##  Entra al proyecto y ejecuta el Fronet
+cd chile-stream-angular
 npm install
-
-# Ejecuta el servidor
 ng serve
 
-# Corre las pruebas unitarias
-ng test --code-coverage
+## Ejecuta el backend:
+cd ChileStream.API
+dotnet run
 
-# Visualiza el reporte de cobertura
-# Abre el archivo: coverage/index.html
-```
+
+##  Asegúrate de tener SQL Server corriendo y ejecuta el script chile_stream.sql dentro de la carpeta database.
+
+
+
+
 
 ##  Dependencias
 
-- Angular CLI: 19.2.8
-- Angular: 19.2.7
-- Node.js: 22.14.0
-- TypeScript: 5.3.3
-- Zone.js: 0.15.0
-- Karma: 6.4.4
+Angular
+Angular CLI
+
+Angular Router
+
+Bootstrap
+
+Backend C#
+ASP.NET Core Web API
+
+Entity Framework Core
+
+Pomelo.EntityFrameworkCore.MySql
+
+Swagger
+
+##  Diagrama de Entidad-Relación
+ Incluido en la carpeta database/er-diagram.png
 
 ## ¿Cómo se hizo?
 
-Se inició el proyecto usando Angular CLI. Se diseñaron componentes personalizados, se implementó autenticación simulada y luego se integró el sistema de pruebas con Karma y Jasmine. También se configuró el archivo `karma.conf.js` y `test.ts` para el reporte de cobertura. Finalmente, se documentó todo el proceso y se subió a GitHub.
+Angular para frontend SPA
+
+ASP.NET Core Web API para backend
+
+Base de datos relacional en MySQL
+
+Conexión mediante servicios Angular (HttpClient)
+
+CORS habilitado
+
+Lazy loading en módulos
+
+Login simulado desde BD
+
+Opiniones persistentes
 
 ##  Reporte de Testing y Code Coverage
 
@@ -59,9 +92,11 @@ Lines        : 85.71% (12/14)
 
 ##  Problemas Conocidos
 
-- Las imágenes de películas arrojan error 404 si no están en la carpeta `assets/peliculas`.
-- El atributo `.title` en `AppComponent` puede generar conflictos si no está declarado explícitamente.
-- Algunas dependencias de pruebas pueden entrar en conflicto si no coinciden con la versión exacta de Angular.
+Falta de validación completa de formularios
+
+No se incluyen filtros de búsqueda avanzados
+
+Opiniones no se pueden editar
 
 ##  Retrospectiva
 
