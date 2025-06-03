@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ChileStream.API.props" />
+</Project>
